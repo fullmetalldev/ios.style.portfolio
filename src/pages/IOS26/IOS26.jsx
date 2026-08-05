@@ -74,7 +74,7 @@ const IOS26 = ({ background, setBackground }) => {
             <hr />
 
             <label className="Contact__profile_notes-label">
-              <p className="Contact__profile_notes-name">actions (click)</p>
+              <p className="Contact__profile_notes-name">actions</p>
               <a
                 onClick={() => setBackground(!background)}
                 className="Contact__profile_notes-label"
