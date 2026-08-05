@@ -3,7 +3,7 @@ import IOS26 from "./pages/IOS26/IOS26.jsx";
 import Ferrofluid from "./Backgrounds/Ferrofluid/Ferrofluid.jsx";
 
 function App() {
-  const [background, setBackground] = useState(false);
+  const [background, setBackground] = useState(true);
 
   return (
     <main className="App">
