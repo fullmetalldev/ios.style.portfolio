@@ -1,10 +1,10 @@
 :root {
   --color-text: #ffffff;
-  --color-background: #21222750;
+  --color-background: #212227;
   --color-light-bg: #95949ad4;
   --color-navbar-text: #111217;
   --color-link: #faf9f6;
-  --color-card-bg: #3f4045;
+  --color-card-bg: #3f404550;
   --color-card-bg-soft: rgba(63, 64, 69, 0.45);
   --color-border-soft: rgba(250, 249, 246, 0.125);
   --color-panel-bg: rgba(255, 255, 255, 0.05);
