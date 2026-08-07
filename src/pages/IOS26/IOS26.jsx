@@ -39,14 +39,14 @@ const IOS26 = ({ background, setBackground }) => {
             <VerifyMark />
           </div>
           <div className="Contact__profile_actions">
+            <button onClick={() => emailMe()}>
+              <EmailIcon />
+            </button>
             <button onClick={() => callMe()}>
               <PhoneIcon />
             </button>
             <button>
               <VideoIcon />
-            </button>
-            <button onClick={() => emailMe()}>
-              <EmailIcon />
             </button>
           </div>
           <div className="Contact__profile_notes infoBlock">
