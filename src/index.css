@@ -1,31 +1,39 @@
 :root {
-  --color-text: #ffffff;
-  --color-background: #212227;
-  --color-light-bg: #95949ad4;
-  --color-navbar-text: #111217;
-  --color-link: #faf9f6;
-  --color-card-bg: #3f404550;
-  --color-card-bg-soft: rgba(63, 64, 69, 0.45);
-  --color-border-soft: rgba(250, 249, 246, 0.125);
-  --color-panel-bg: rgba(255, 255, 255, 0.05);
-  --color-active: #103b92;
+    --color-text: #ffffff;
+    --color-background: #212227;
+    --color-light-bg: #95949ad4;
+    --color-navbar-text: #111217;
+    --color-link: #faf9f6;
+    --color-card-bg: #3f404550;
+    --color-card-bg-soft: rgba(63, 64, 69, 0.45);
+    --color-border-soft: rgba(250, 249, 246, 0.125);
+    --color-panel-bg: rgba(255, 255, 255, 0.05);
+    --color-active: #103b92;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Geist", sans-serif;
-  color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geist", sans-serif;
+    color: var(--color-text);
 }
 
 .container {
-  max-width: 530px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 530px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 body {
-  overflow: hidden;
-  background: var(--color-background);
+    overflow: hidden;
+    background: #33351f;
+}
+
+html {
+    background: #33351f;
+}
+
+.App {
+    background: radial-gradient(120% 70% at 30% 0%, #6b6e4d 0%, #545640 30%, #33351f 62%, #17170e 100%);
 }
