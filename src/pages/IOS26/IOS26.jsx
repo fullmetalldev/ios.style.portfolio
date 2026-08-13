@@ -7,10 +7,10 @@ import VideoIcon from "../../assets/videoIcon";
 
 const IOS26 = ({background, setBackground}) => {
     const callMe = () => {
-        window.location.href = "tel:+15551234567";
+        window.location.href = "tel:+13465294769";
     };
     const emailMe = () => {
-        window.location.href = "mailto:example@gmail.com";
+        window.location.href = "mailto:info@erbol.dev";
     };
     const sharePage = () => {
         if (navigator.share) {
