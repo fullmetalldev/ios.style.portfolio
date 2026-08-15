@@ -6,26 +6,26 @@ import VerifyMark from "../../assets/verifiedmark";
 import VideoIcon from "../../assets/videoIcon";
 import ChatIcon from "../../assets/chatIcon";
 
-const IOS26 = ({ background, setBackground }) => {
-  const callMe = () => {
-    window.location.href = "tel:+15551234567";
-  };
-  const emailMe = () => {
-    window.location.href = "mailto:example@gmail.com";
-  };
-  const sharePage = () => {
-    if (navigator.share) {
-      navigator.share({
-        title: document.title,
-        text: "Check out this page",
-        url: window.location.href,
-      });
-    } else {
-      // Fallback for browsers without Web Share API
-      navigator.clipboard.writeText(window.location.href);
-      alert("Link copied!");
-    }
-  };
+const IOS26 = ({background, setBackground}) => {
+    const callMe = () => {
+        window.location.href = "tel:+13465294769";
+    };
+    const emailMe = () => {
+        window.location.href = "mailto:info@erbol.dev";
+    };
+    const sharePage = () => {
+        if (navigator.share) {
+            navigator.share({
+                title: document.title,
+                text: "Check out this page",
+                url: window.location.href,
+            });
+        } else {
+            // Fallback for browsers without Web Share API
+            navigator.clipboard.writeText(window.location.href);
+            alert("Link copied!");
+        }
+    };
 
   return (
     <section className="Contact">
