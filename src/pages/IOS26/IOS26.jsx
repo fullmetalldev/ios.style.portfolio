@@ -5,27 +5,28 @@ import PhoneIcon from "../../assets/phoneIcon";
 import VerifyMark from "../../assets/verifiedmark";
 import VideoIcon from "../../assets/videoIcon";
 import ChatIcon from "../../assets/chatIcon";
+import BackgroundsList from "../../Backgrounds/backgrounds.json";
 
-const IOS26 = ({background, setBackground}) => {
-    const callMe = () => {
-        window.location.href = "tel:+13465294769";
-    };
-    const emailMe = () => {
-        window.location.href = "mailto:info@erbol.dev";
-    };
-    const sharePage = () => {
-        if (navigator.share) {
-            navigator.share({
-                title: document.title,
-                text: "Check out this page",
-                url: window.location.href,
-            });
-        } else {
-            // Fallback for browsers without Web Share API
-            navigator.clipboard.writeText(window.location.href);
-            alert("Link copied!");
-        }
-    };
+const IOS26 = ({ background, setBackground, setBackgroundName }) => {
+  const callMe = () => {
+    window.location.href = "tel:+13465294769";
+  };
+  const emailMe = () => {
+    window.location.href = "mailto:info@erbol.dev";
+  };
+  const sharePage = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        text: "Check out this page",
+        url: window.location.href,
+      });
+    } else {
+      // Fallback for browsers without Web Share API
+      navigator.clipboard.writeText(window.location.href);
+      alert("Link copied!");
+    }
+  };
 
   return (
     <section className="Contact">
@@ -95,6 +96,22 @@ const IOS26 = ({background, setBackground}) => {
               >
                 Live Background: {background ? "On" : "Off"}
               </a>
+            </label>
+
+            <hr />
+
+            <label className="Contact__profile_notes-label">
+              <p className="Contact__profile_notes-name">backgrounds:</p>
+              {BackgroundsList.map((a) => (
+                <p
+                  onClick={() => {
+                    localStorage.setItem("background", a);
+                    setBackgroundName(a);
+                  }}
+                >
+                  {a}
+                </p>
+              ))}
             </label>
           </div>
 

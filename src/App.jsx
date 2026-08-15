@@ -1,33 +1,25 @@
 import { useState } from "react";
 import IOS26 from "./pages/IOS26/IOS26.jsx";
-import Ferrofluid from "./Backgrounds/Ferrofluid/Ferrofluid.jsx";
+import getBackground from "./Backgrounds/backgrounds.jsx";
 
 function App() {
   const [background, setBackground] = useState(true);
+  const [backgroundName, setBackgroundName] = useState(
+    localStorage.getItem("background") || "Ferrofluid",
+  );
 
   return (
     <main className="App">
       {background ? (
-        <Ferrofluid
-          colors={["#ffffff", "#ffffff", "#ffffff"]}
-          speed={0.5}
-          scale={1.6}
-          turbulence={1}
-          fluidity={0.1}
-          rimWidth={0.2}
-          sharpness={2.5}
-          shimmer={1.5}
-          glow={2}
-          flowDirection="down"
-          opacity={1}
-          mouseInteraction
-          mouseStrength={1}
-          mouseRadius={0.35}
-        />
+        <div className="background">{getBackground(backgroundName)}</div>
       ) : (
         ""
       )}
-      <IOS26 background={background} setBackground={setBackground} />
+      <IOS26
+        setBackgroundName={setBackgroundName}
+        background={background}
+        setBackground={setBackground}
+      />
       {/* <NavBar  /> */}
     </main>
   );
