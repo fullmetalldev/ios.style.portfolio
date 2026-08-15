@@ -1,6 +1,6 @@
 import Ferrofluid from "./Ferrofluid/Ferrofluid";
 import FloatingLines from "./FloatingLines/FloatingLines";
-import Lightfall from "./LightFall/LightFall";
+import Lightfall from "./Lightfall/Lightfall";
 import LightPillar from "./LightPillar/LightPillar";
 import MoltenMetal from "./MoltenMetal/MoltenMetal";
 import Prism from "./Prism/Prism";
