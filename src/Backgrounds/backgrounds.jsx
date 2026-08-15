@@ -1,9 +1,9 @@
 import Ferrofluid from "./Ferrofluid/Ferrofluid";
 import FloatingLines from "./FloatingLines/FloatingLines";
-import Lightfall from "./Lightfall/Lightfall";
 import LightPillar from "./LightPillar/LightPillar";
 import MoltenMetal from "./MoltenMetal/MoltenMetal";
 import Prism from "./Prism/Prism";
+import Lightfall from "./Lightfall/Lightfall";
 
 const getBackground = (name) => {
   switch (name) {
@@ -80,7 +80,7 @@ const getBackground = (name) => {
           opacity={1}
         />
       );
-    case "LightFall":
+    case "Lightfall":
       return (
         <Lightfall
           colors={["#A6C8FF", "#5227FF", "#FF9FFC"]}
