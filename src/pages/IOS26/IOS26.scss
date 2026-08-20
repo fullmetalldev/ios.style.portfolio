@@ -41,7 +41,7 @@
     width: 100%;
     height: calc(100vh - 30px - 100px);
     border-radius: 30px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
 
     &_name {
       display: flex;
